@@ -206,8 +206,8 @@
 	    
     /* :: About US */
     .about-us .about-us-img-box{
-        height: 500px;
-        margin: 0 0 50px 0;
+        /* height: 500px; */
+        /* margin: 0 0 50px 0; */
 		padding: 0;
     }
     .about-us .about-us-img-box .img-box{
@@ -335,7 +335,7 @@
 	
 	/* :: Breadcrumb Header */
 	.breadcrumb-header .banner h1{
-		font-size: 60px;
+		font-size: 30px;
 	}
 	
 	/* :: Single Team */
