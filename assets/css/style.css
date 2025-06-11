@@ -1438,12 +1438,12 @@ p {
 .about-us .about-us-img-box{
 	position: relative;
     padding-right: 20px;
-    height: 100%;
+   
 }
-.about-us .about-us-img-box .img-box{
+.about-us .about-us-img-box img{
 	position: relative;
     border-radius: 10px;
-    height: 100%;
+   
     background-size: cover;
     background-position: right;
     -webkit-box-shadow: 0 5px 40px rgb(9 29 62 / 11%);
@@ -1635,7 +1635,7 @@ p {
 .about-us.home-2 .about-us-img-box{
     padding: 0 30px 0 50px;
 }
-.about-us.home-2 .about-us-img-box .img-box{
+.about-us.home-2 .about-us-img-box img{
     background-position: center;
 }
 .start-grow{
@@ -1751,7 +1751,7 @@ p {
 .about-us.home-3 .about-us-img-box{
     padding: 20px 20px 20px 0;
 }
-.about-us.home-3 .about-us-img-box .img-box:after{
+.about-us.home-3 .about-us-img-box img:after{
 	content: '';
     /*background-color: #e0dcff;*/
     width: 80%;
@@ -1943,23 +1943,83 @@ p {
     display: flex;
     align-items: center;
 }
-.service_card_main .btnn a:nth-child(1) {
-    background-color: #013a80;
-    color: #ffffff;
-    font-size: 1.0rem;
-    font-weight: 500;
-}
 
 .service_card_main .btnn a {
     padding: 1rem;
     width: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    overflow: hidden;
+    z-index: 1;
 }
+
+.service_card_main .btnn a:nth-child(1) {
+    background-color: #013a80;
+    color: #ffffff;
+}
+
+.service_card_main .btnn a:nth-child(1)::after,
+.service_card_main .btnn a:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 50%;
+    transition: width 0.3s ease;
+    z-index: -1;
+    background-color: #031a35;
+}
+
+.service_card_main .btnn a:nth-child(1)::after {
+    top: 0;
+    left: 0;
+}
+
+.service_card_main .btnn a:nth-child(1)::before {
+    bottom: 0;
+    right: 0;
+}
+
+.service_card_main .btnn a:nth-child(1):hover::after,
+.service_card_main .btnn a:nth-child(1):hover::before {
+    width: 100%;
+}
+
 .service_card_main .btnn a:nth-child(2) {
     background-color: #bda13e;
     color: #fff;
-    font-size: 1.0rem;
-    font-weight: 500;
 }
+
+.service_card_main .btnn a:nth-child(2)::after,
+.service_card_main .btnn a:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 50%;
+    transition: width 0.3s ease;
+    z-index: -1;
+    background-color: #76621b;
+}
+
+.service_card_main .btnn a:nth-child(2)::after {
+    top: 0;
+    left: 0;
+}
+
+.service_card_main .btnn a:nth-child(2)::before {
+    bottom: 0;
+    right: 0;
+}
+
+.service_card_main .btnn a:nth-child(2):hover::after,
+.service_card_main .btnn a:nth-child(2):hover::before {
+    width: 100%;
+}
+
+
+
+
 
 
 .services.home-2 .services-carousel-item .services-item-img-box span,
@@ -3232,7 +3292,11 @@ p {
 /* :: Footer */
 .footer{
     padding-top: 60px;
-    background-color: #013a81;
+    /* background-color: #013a81; */
+    background-image: url(../../gradient-blue-abstract-technology-background_23-2149213765.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .footer .logo,
 .footer .links{
