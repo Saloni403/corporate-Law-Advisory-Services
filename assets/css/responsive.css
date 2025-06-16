@@ -378,4 +378,7 @@
 		display: block;
 		overflow-x: scroll;
 	}
+    .sec-title h3{
+        font-size: 20px;
+    }
 }
