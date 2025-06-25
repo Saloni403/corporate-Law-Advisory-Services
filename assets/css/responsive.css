@@ -99,20 +99,12 @@
     .nav-bar .nav-bar-links{
         display: none;
     }
-    /* .nav-bar .nav-bar-links.active{
-        display: block;
-        max-height: 300px;
-        overflow: hidden;
-        overflow-y: scroll;
-        -webkit-box-shadow: 0 3px 4px rgb(0 0 0 / 7%);
-                box-shadow: 0 3px 4px rgb(0 0 0 / 7%);
-        background-color: #1C1A30;
-    } */
+ 
       .nav-bar .nav-bar-links.active{
         display: block;
        position: fixed;
        left: 0;
-       top: 100px;
+       /* top: 100px; */
        z-index: 99;
        width: 100%;
         max-height: 300px;
@@ -120,7 +112,7 @@
         overflow-y: scroll;
         -webkit-box-shadow: 0 3px 4px rgb(0 0 0 / 7%);
                 box-shadow: 0 3px 4px rgb(0 0 0 / 7%);
-        background-color: #1C1A30;
+        background-color: whitesmoke;
     }
     .nav-bar .nav-bar-links .level-1 .item-level-1{
         display: block;
@@ -248,7 +240,8 @@
         background-color: #F57009;
     }
 	.all-navbar.home-2 .nav-bar .nav-bar-links .level-1 .item-level-1 .link-level-1{
-		color: #FFF;
+		/* color: #FFF; */
+        color: navy;
 	}
 	.about-us.home-2 .about-us-img-box{
 		margin: 50px 0 0 0;

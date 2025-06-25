@@ -995,7 +995,7 @@ p {
     display: inline-block;
     color: #FFF;
     font-size: 12px;
-    padding: 10px;
+    padding: 15px;
     padding-left: 0;
     line-height: 1.1;
     text-transform: capitalize;
@@ -1008,7 +1008,7 @@ p {
     display: inline-block;
     color: #FFF;
     font-size: 2rem;
-    padding-left: 15px;
+    padding-left: 10px;
     margin-top: 0.5rem;
     line-height: 1;
 }
@@ -1047,7 +1047,7 @@ p {
 .all-navbar.home-2 .nav-bar .nav-bar-tools li .nav-bar-contact .content-box a:hover,
 .all-navbar.home-2 .nav-bar .nav-bar-tools li .search-icon i:hover,
 .all-navbar.home-2 .nav-bar .nav-bar-tools li .menu-icon i:hover{
-    color: #013a81;
+    color: navy;
 }
 
 /* :: Search Box */
